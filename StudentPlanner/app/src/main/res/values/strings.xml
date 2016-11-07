@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">StudentPlanner</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_assignment">Assignment</string>
+    <string name="nav_project">Project</string>
+    <string name="nav_courses">Course</string>
+
+    <string name="dbname">StudentPlannerDB</string>
+
+    <string name="term_table">Terms</string>
+    <string name="term_termid">term_id</string>
+    <string name="term_termname">term_name</string>
+    <string name="term_termstartdate">term_start_date</string>
+    <string name="term_termenddate">term_end_date</string>
+
+    <string name="course_table">Courses</string>
+    <string name="course_coursename">course_name</string>
+    <string name="course_termid">course_term_id</string>
+    <string name="course_courselocation">course_location</string>
+    <string name="course_coursestarttime">course_start_time</string>
+    <string name="course_courseendtime">course_end_time</string>
+
+    <string name="task_table">Tasks</string>
+    <string name="task_taskid">task_id</string>
+    <string name="task_taskcourseid">task_course_id</string>
+    <string name="task_taskname">task_name</string>
+    <string name="task_taskdescription">task_description</string>
+    <string name="task_taskduedate">task_due_date</string>
+
+    <string name="taskattachment_table">Task_Attachments</string>
+    <string name="taskattachment_attachmentid">task_attachment_id</string>
+    <string name="taskattachment_taskid">task_id</string>
+    <string name="taskattachment_attachmentlink">task_attachment_link</string>
+    <string name="taskattachment_attachmenttype">task_attachment_type</string>
+
+    <string name="assignment_table">Assignments</string>
+    <string name="assignment_assignmentid">assignmment_id</string>
+    <string name="assignment_assignmentcourseid">assignment_course_id</string>
+    <string name="assignment_assignmentname">assignment_name</string>
+    <string name="assignment_assignmentdescription">assignment_description</string>
+    <string name="assignment_assignmentduedate">assignment_due_date</string>
+    <string name="assignment_assignmentduetime">assignment_due_time</string>
+
+    <string name="assignmentattachment_table">Assignment_Attachments</string>
+    <string name="assignmentattachment_attachmentid">assignment_attachment_id</string>
+    <string name="assignmentattachment_assignmentid">assignment_id</string>
+    <string name="assignmentattachment_attachmentlink">assignment_attachment_link</string>
+    <string name="assignmentattachment_attachmenttype">assignment_attachment_type</string>
+
+    <string name="project_table">Projects</string>
+    <string name="project_projectid">project_id</string>
+    <string name="project_projectcourseid">project_course_id</string>
+    <string name="project_projectname">project_name</string>
+    <string name="project_projectdescription">project_description</string>
+    <string name="project_projectduedate">project_due_date</string>
+    <string name="project_projectduetime">project_due_time</string>
+    <string name="project_projecttotalphases">project_total_phases</string>
+
+    <string name="projectphases_table">Project_Phases</string>
+    <string name="projectphases_projectphaseid">projectphase_id</string>
+    <string name="projectphases_projectid">projectphase_project_id</string>
+    <string name="projectphases_courseid">projectphase_course_id</string>
+    <string name="projectphases_projectphasename">projectphase_name</string>
+    <string name="projectphases_projectphasedescription">projectphase_description</string>
+    <string name="projectphases_projectphaseduedate">projectphase_due_date</string>
+    <string name="projectphase_projectphaseduetime">projectphase_due_time</string>
+
+    <string name="projectphasesattachment_table">Project_Phase_Attachments</string>
+    <string name="projectphasesattachment_attachmentid">projectphase_attachment_id</string>
+    <string name="projectphasesattachment_projectid">ppa_project_id</string>
+    <string name="projectphasesattachment_pojectphaseid">ppa_projectphase_id</string>
+    <string name="projectphasesattachment_attachmentlink">projectphase_attachment_link</string>
+    <string name="projectphasesattachment_attachmenttype">projectphase_attachment_type</string>
+
+</resources>
