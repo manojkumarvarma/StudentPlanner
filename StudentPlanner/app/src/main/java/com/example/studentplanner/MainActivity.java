@@ -1,8 +1,10 @@
 package com.example.studentplanner;
 
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,15 +15,56 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    // Database Helper
+    DBHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        db = new DBHelper(getApplicationContext());
+
+        /*
+        StudentTermModel inputValue1 = new StudentTermModel();
+        inputValue1.setTermName("Fall 2015");
+        inputValue1.setTermStartDate(20150820);
+        inputValue1.setTermEndDate(20151212);
+        db.addNewTerm(inputValue1);
+
+        StudentTermModel inputValue2 = new StudentTermModel();
+        inputValue2.setTermName("Spring 2016");
+        inputValue2.setTermStartDate(20160125);
+        inputValue2.setTermEndDate(20160612);
+        db.addNewTerm(inputValue2);
+
+        StudentTermModel inputValue3 = new StudentTermModel();
+        inputValue3.setTermName("Fall 2016");
+        inputValue3.setTermStartDate(20160812);
+        inputValue3.setTermEndDate(20161212);
+        db.addNewTerm(inputValue3);
+
+        */
+        List<StudentTermModel> allTermsValues = db.getAllTerms();
+
+        for (StudentTermModel term : allTermsValues) {
+            Log.d("Term id", ": " +term.getTermId());
+            Log.d("Term Name",": "+term.getTermName());
+            Log.d("Term StartDate", ": " + term.getTermStartDate());
+            Log.d("Term Name", ": " + term.getTermEndDate());
+        }
+
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
